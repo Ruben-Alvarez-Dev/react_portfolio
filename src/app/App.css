@@ -1,0 +1,24 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    background-color: #282c34;
+    
+}
+
+.app{
+    
+    max-width: 1440px;
+    margin: 0 auto;
+
+    
+}
