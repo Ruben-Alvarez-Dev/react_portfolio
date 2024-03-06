@@ -4,9 +4,14 @@ import { Skills } from "../sections/Skills/Skills"
 import { Projects } from "../sections/Projects/Projects"
 import { Contact } from "../sections/Contact/Contact"
 import { Hero } from '../sections/Hero/Hero'
+import { checkIntersection } from '../../helpers/checkIntersection'
 
 
 export const Main = () => {
+  
+  checkIntersection();
+  
+
   return (
     <main className="main">
       <div id="hero-anchor"></div>
@@ -20,5 +25,5 @@ export const Main = () => {
       <div id="contact-anchor"></div>
       <Contact />
     </main>
-  )
-}
+  );
+};

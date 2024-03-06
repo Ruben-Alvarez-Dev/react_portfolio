@@ -110,5 +110,8 @@
     .icon {
      width: 15%;
     }
-    
+    .me{
+        min-width: 150px;
+        max-width: 200px;
+    }
 }
