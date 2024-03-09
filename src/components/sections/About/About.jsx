@@ -1,7 +1,7 @@
 import { Card } from '../../Card/Card';
 import './About.css';
 import { AboutCard } from "./AboutCard"
-import { background, training, languages } from './aboutData';
+import { background, training } from './aboutData';
 
 export const About = () => {
   
@@ -10,13 +10,14 @@ export const About = () => {
     <>
       <Card 
         as='section'
+        id="about"
         type='page'
         title='About'
         styles='about neo-5-out column'
         content={
           <>
-            <div className="about__container">
-              <Card 
+            <div className="about__panels">
+            <Card 
                 as='article'
                 type='panel'
                 styles='left neo-5-out column'
