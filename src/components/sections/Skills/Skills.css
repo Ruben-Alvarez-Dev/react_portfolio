@@ -1,12 +1,22 @@
-.skills__container {
-    padding: 50px 0;
-    text-align: center;
-}
-.section ul {
+.skills.page{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    min-height: 80vh;
 }
 
+.skills__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+@media (orientation: portrait) {
+    .skills.page{
+        min-height: auto;
+    }
+}
