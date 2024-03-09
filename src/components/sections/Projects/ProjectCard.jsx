@@ -61,7 +61,7 @@ export const ProjectCard = () => {
 
 
   return (
-    <div className="projectCard">
+    <div className="projectCard neo-5-out">
       
         <div className="projectCard__display">
           <div className="projectCard__display-canvas">
