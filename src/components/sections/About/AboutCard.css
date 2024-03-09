@@ -1,8 +1,5 @@
-.aboutCard{
-    /* background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); */
-    /* padding: 2vw;
-    margin: 2vh; */
+/* .aboutCard{
+    
     border-radius: 20px;
     width: auto;
     display: flex;
@@ -17,13 +14,12 @@
 
 .background{
     width: auto;
-    max-width: 40%;
+
     
 }
 .about.training{
     width: auto;
     min-width: auto;
-    max-width: 60%;
     height: 100%;
 }
 .aboutCard.languages{
@@ -34,10 +30,10 @@
     .background{
         width: auto;
         max-width: 100%;
-        
     }
     .about.training{
         max-width: 100%;
     }
     
 }
+ */

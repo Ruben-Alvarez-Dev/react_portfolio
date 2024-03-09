@@ -1,27 +1,9 @@
-.about__container{
-    display: flex;
-    flex-direction: row;        
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-    gap: 5vh;
-    width: 100%;
-    height: auto;
-    
-    margin-bottom: 5vh;
-}
-.about{
-}
+.about{}
+.aboutCard{}
 
-@media (orientation: portrait) {
-    .about__container{
-        flex-direction: column;
-    }
-    .about{
-        min-height: auto;
-    }
-    .aboutCard{
-        padding: 3vh;
-    }
+.left{
+    width: 40%;    
+}
+.right{
+    width: 60%;
 }

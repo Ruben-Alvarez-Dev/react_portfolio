@@ -1,4 +1,4 @@
-.projects__container{
+.project__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,8 +8,8 @@
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
 
 }
 

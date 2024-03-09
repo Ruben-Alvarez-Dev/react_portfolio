@@ -7,6 +7,7 @@ import { Hero } from '../sections/Hero/Hero'
 import { checkIntersection } from '../../helpers/checkIntersection'
 
 
+
 export const Main = () => {
   
   checkIntersection();
@@ -14,16 +15,22 @@ export const Main = () => {
 
   return (
     <main className="main">
+      
       <div id="hero-anchor"></div>
-      <Hero />
+        <Hero />
+      
       <div id="about-anchor"></div>
-      <About />
+        <About />
+      
       <div id="skills-anchor"></div>
-      <Skills />
+        <Skills />
+      
       <div id="projects-anchor"></div>
-      <Projects />
+        <Projects />
+      
       <div id="contact-anchor"></div>
-      <Contact />
+        <Contact />
+      
     </main>
   );
 };

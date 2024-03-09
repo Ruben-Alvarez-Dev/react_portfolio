@@ -1,31 +1,25 @@
 import './Hero.css';
-import me from './me.jpeg';
-import github from '../../../assets/hero/github.svg';
-import linkedin from '../../../assets/hero/linkedin.svg';
-import whatsapp from '../../../assets/hero/whatsapp.svg';
+import { heroData } from './heroData';
+import { Card } from '../../Card/Card';
 
 export const Hero = () => {
   return (
-    <section className="section hero">
-      <div className="hero__panel left">
-        <h2>Hi, I´m Rubén,</h2>
-        <h3>fullstack developer,</h3>
-        <p>
-          based in Sevilla, and passionate about technology, logic and problem solving.
-        </p>
-        <div className="hero__icons">
-          
-            <img className="icon" src={github} />
-            <img className="icon" src={linkedin} />
-            <img className="icon" src={whatsapp} />
-            
-          
-        </div>
-      </div>  
-      <div className="hero__panel right">
-        <img className="me" src={me} alt="Hero Image" />
-      </div>
-      
-    </section>
+    <>
+    <Card
+      as={"section"}
+      id='hero'
+      styles={'hero neo-5-out column'}
+      content={
+        <Card 
+          as={"article"}
+          type='panel'
+          width=''
+          styles={'neo-5-out column'}
+          content={heroData}
+        />
+      }
+    />
+    </>
   )
 }
+
