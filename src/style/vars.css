@@ -1,10 +1,21 @@
 :root{
     /* Colours */
+    
     --color-text: #fff;
     --color-primary: #576cbc;
     --color-secondary: #19376d;
     --color-dark: #0b2447;
-    --color-bg: #04152d;
+
+    --color-bg: #e0e0e0;
+    --color-bg-light: #bebebe;
+    --color-bg-dark: #ffffff;
+
+    --color-base: rgb(225, 225, 225);
+    --color-shadow: rgb(200, 200, 200);
+    --color-light: rgb(255, 255, 255);
+
+
+    
     
     /* Fonts */
     font-family: "Roboto", sans-serif;

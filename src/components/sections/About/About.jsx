@@ -57,6 +57,8 @@ export const About = () => {
   ]
   return (
     <section className="section about">
+      <h2>About</h2>
+      <div className="about__container">
       <AboutCard
         className="background"
         title="Background"
@@ -72,6 +74,7 @@ export const About = () => {
         title="Formación"
         content={training}
       />
+      </div>
       </section>
   )
 }

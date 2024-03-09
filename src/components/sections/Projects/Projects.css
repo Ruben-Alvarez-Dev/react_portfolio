@@ -1,27 +1,25 @@
-.about__container{
+.projects__container{
     display: flex;
-    flex-direction: row;        
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    margin: 0 auto;
     gap: 5vh;
     width: 100%;
     height: auto;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vh;
     margin-bottom: 5vh;
-}
-.about{
+
 }
 
 @media (orientation: portrait) {
-    .about__container{
+    .projects__container{
         flex-direction: column;
+        gap: 20vh;
     }
-    .about{
+    .projects{
         min-height: auto;
     }
-    .aboutCard{
-        padding: 3vh;
-    }
+    
 }

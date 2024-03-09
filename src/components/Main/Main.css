@@ -9,9 +9,12 @@
     width: 100%;
     margin: 0 auto;
     overflow-y: scroll;
+
+
+
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+    
 }
 .main::-webkit-scrollbar {
     width: 0px;
@@ -29,30 +32,57 @@
     border-radius: 20px;
     
     margin-top: 15vh;
+    
     padding: 3vh 0.5vw 3vh 0.5vw;
-
+    min-height: 80vh;
 
     display: flex;
     flex-direction: row wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 3vh;
+
+    scroll-snap-align: start;
+    scroll-margin-top: 15vh;
+
+    
 }
 .section.hero {
     max-height: auto;
-    min-height: 80vh;
 }
 .section.about{
-    min-height: auto;
-    flex-direction: row;
+    flex-direction: column;
+}
+.section.skills{
+    flex-direction: column;
     
+}
+.section.projects{
+    flex-direction: column;
+}
+.section.contact{
+    flex-direction: column;
+    margin-bottom: 5vh;
 }
 
 @media (orientation: portrait) {
     .section {
+        min-height: 80vh;
+
+    }
+    .section.hero{}
+    .section.about{}
+    .section.skills{
         min-height: auto;
     }
-    .section.about {
-        flex-direction: column;
+    .section.projects{
+        
     }
+    .section.contact{}
+
+    .asection.about {
+        
+        
+    }
+    
 }
