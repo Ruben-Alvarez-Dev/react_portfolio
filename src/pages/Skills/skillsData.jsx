@@ -1,3 +1,5 @@
+import { SkillsCard } from "./SkillsCard";
+
 export const skillsFrontend = [
     { label: "HTML", color: "red" },
     { label: "CSS", color: "blue" },
@@ -8,7 +10,6 @@ export const skillsFrontend = [
     { label: "Jquery", color: "white" },
     { label: "Bootstrap", color: "green" }
   ];
-
 export const skillsBackend = [
     { label: "Node.js", color: "lime" },
     { label: "Express.js", color: "white" },
@@ -19,7 +20,6 @@ export const skillsBackend = [
     { label: "C#", color: "fuchsia" },
     { label: "PHP", color: "aqua" }
   ];
-
 export const toolsAndTech = [
     { label: "Git", color: "grey" },
     { label: "VS Code", color: "blue" },
@@ -30,3 +30,15 @@ export const toolsAndTech = [
     { label: "Heroku", color: "indigo" },
     { label: "Jenkins", color: "darkorange" }
   ];
+export const skillsTemplate = (
+        <>
+              <ul>
+                  <SkillsCard label="Frontend" list={skillsFrontend}/>
+                  <SkillsCard label="Backend" list={skillsBackend}/>
+                  <SkillsCard label="Tools & Tech" list={toolsAndTech}/>
+              </ul>
+          
+        </>
+    )
+
+  

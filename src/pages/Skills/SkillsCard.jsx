@@ -1,4 +1,4 @@
-/* import './SkillsCard.css'; */
+import './SkillsCard.css';
 import { SkillCardItem } from './SkillCardItem';
 
 export const SkillsCard = ({label, list}) => {
@@ -6,7 +6,7 @@ export const SkillsCard = ({label, list}) => {
 
   return (
     <>
-      <div className="skillCard">
+      <div className="skillCard neo-5-out">
           <h2 className="skillCard__title">{label}</h2>
           <div className="skillCard__list">
             {

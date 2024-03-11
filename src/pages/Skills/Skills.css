@@ -1,29 +1,27 @@
-.skills.page{
+/* .skills .page{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     min-height: 80vh;
-}
-
-.skills .page__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2vh;
-    padding: 2vh 2vw 2vh 2vw;
-
-}
-
-.skills__container{
+} */
+.skills .card{
+    width: 95%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
-    align-content: center;
-    padding: 2vh 2vw 2vh 2vw;
+    align-items: center;
+
+    margin: 0 auto;
+    border-radius: 20px;
+
+    text-align: left;
+
 }
+
+
+
 
 @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
     .skills.page{

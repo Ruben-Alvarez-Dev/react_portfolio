@@ -1,9 +1,12 @@
 .skillCardItem{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 5px 50px 5px 50px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
 
-    
+.skillCardItem:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
 }
