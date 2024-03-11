@@ -1,19 +1,32 @@
 :root{
     /* Colours */
     
-    --color-text: #fff;
+    --color-text-light: #fff;
     --color-primary: #576cbc;
     --color-secondary: #19376d;
     --color-dark: #0b2447;
 
-    --color-bg: #e0e0e0;
+    --color-bg-root: #282c34;
+    --color-bg-app: #3f819b;
+    --color-bg: #5c81c0;
     --color-bg-light: #bebebe;
-    --color-bg-dark: #ffffff;
+    --color-bg-dark: rgba(0, 0, 0, 0.3);
 
+    --color-neo-border: rgba(0, 0, 0, 0.1);
+    --color-neo-shadow: rgba(0, 0, 0, 0.2);
+    --color-neo-light: rgba(255, 255, 255, 0.2);
+    
     --color-base: rgb(225, 225, 225);
-    --color-shadow: rgb(200, 200, 200);
+    --color-shadow: rgba(0, 0, 0, 1);
     --color-light: rgb(255, 255, 255);
 
+    --color-gradient-one: #8278f3;
+    --color-gradient-two: #a9a0f3;
+    --color-gradient-three: #c7c1f3;
+    --color-gradient-four: #e4e1f3;
+    --color-gradient-primary: #8278f3;
+    --color-gradient-secondary: #4299af;
+;
 
     
     

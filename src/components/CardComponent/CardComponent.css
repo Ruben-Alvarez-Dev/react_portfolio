@@ -1,0 +1,101 @@
+
+/* BASE CARD STYLE */
+/* ------------------------ */
+
+
+.card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    margin: 0 auto; 
+    /* background-color: rgba(240, 248, 255, 0.5); */
+    background: linear-gradient(45deg, var(--color-gradient-primary), var(--color-gradient-secondary));
+}
+/* .default{
+    background-color: rgba(0, 238, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 1);
+} */
+/* .card__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    width: 100%;
+    padding: 3vh 0.5vw 3vh 0.5vw;
+    border-radius: 20px;
+    scroll-snap-align: start;
+    scroll-margin-top: 15vh;
+
+} */
+/* .card__title{
+} */
+
+/* .card__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vh;
+    
+} */
+
+/* Orientation Based Styles */
+
+/* .row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+} */
+/* Component Type Based Styles */
+
+
+/* .panel{
+    background-color: rgba(0, 0, 255, 0.2);
+    
+    
+    
+    
+    
+}
+.element{
+    background-color: rgba(255, 0, 0, 0.2);
+
+} */
+
+
+/* NEO BORDERS */
+/* ------------------------ */
+
+/* .border{
+    border: 5px solid rgba(125, 125, 125, 0.1);
+    box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.3),
+                 -10px -10px 20px rgba(255, 255, 255, 0.3);
+} */
+
+/* @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
+    
+    .page{
+        min-height: auto;
+        
+    }
+    .card{
+        flex-direction: column;
+        max-width: 95%;
+    }
+ 
+
+} */

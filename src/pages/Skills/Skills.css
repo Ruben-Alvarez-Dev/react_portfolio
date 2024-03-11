@@ -1,0 +1,34 @@
+.skills.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.skills .page__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    padding: 2vh 2vw 2vh 2vw;
+
+}
+
+.skills__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+@media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
+    .skills.page{
+        min-height: auto;
+    }
+}
+
+/* @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) { */

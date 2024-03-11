@@ -1,0 +1,54 @@
+/* ContactForm.css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 0.5vh;
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+    
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2); /* BEGIN: Change input background color to green */
+    color: white; /* BEGIN: Change input text color to white */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ccc; /* BEGIN: Change placeholder color to gray */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 1vh;
+    
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

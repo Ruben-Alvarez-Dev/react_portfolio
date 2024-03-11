@@ -1,0 +1,100 @@
+:root{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.icon{
+    width: 2em;
+    height: auto;
+    transition : all 0.5s ease;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    transition: all 0.5s;
+}
+
+/* NEO REGULAR 10px IN-OUT */
+/* ------------------------ */
+.neo-5{
+    border: 2px solid var(--color-neo-shadow);
+    box-shadow:  5px 5px 10px var(--color-neo-shadow),
+    -5px -5px 10px var(--color-neo-light);
+    transition: all 0.5s ease;
+}
+.neo-5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* box-shadow:  5px 5px 10px var(--color-neo-shadow),
+                 -5px -5px 10px var(--color-neo-light);
+     */
+     opacity: 1;
+    transition: all 0.5s ease;
+}
+.neo-5:hover {
+    box-shadow:  inset 5px 5px 10px var(--color-neo-shadow),
+                inset -5px -5px 10px var(--color-neo-light);
+}
+.neo-5:hover::before {
+
+    opacity: 0; 
+}
+.neo-5-out{
+
+    transition: all 0.5s ease;
+    border: 1px solid var(--color-neo-border);
+    box-shadow:  5px 5px 10px var(--color-neo-shadow),
+                 -5px -5px 10px var(--color-neo-light);
+
+}
+.neo-5-in{
+
+    transition: all 0.5s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:  inset 5px 5px 10px var(--color-neo-shadow),
+                inset -5px -5px 10px var(--color-neo-light);
+}
+
+/* NEO REGULAR 10px IN-OUT */
+/* ------------------------ */
+.neo-10{
+
+    transition: all 0.5s ease;
+    border: 1px solid var(--color-neo-border);
+}
+.neo-10::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow:  10px 10px 20px var(--color-neo-shadow),
+                 -10px -10px 20px var(--color-neo-light);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.neo-10:hover {
+    box-shadow:  inset 10px 10px 20px var(--color-neo-shadow),
+                inset -10px -10px 20px var(--color-neo-light);
+}
+.neo-10:hover::before {
+    opacity: 0; 
+}
+.neo-10-out{
+    transition: all 0.5s ease;
+    border: 2px solid rgba(125, 125, 125, 0.1);
+    box-shadow:  10px 10px 20px var(--color-neo-shadow),
+                 -10px -10px 20px var(--color-neo-light);
+
+}
+.neo-10-in{
+    transition: all 0.5s ease;
+    border: 2px solid rgba(125, 125, 125, 0.1);
+    box-shadow:  inset 10px 10px 20px var(--color-neo-shadow),
+                inset -10px -10px 20px var(--color-neo-light);
+}

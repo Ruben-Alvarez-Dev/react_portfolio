@@ -1,0 +1,53 @@
+
+.contact.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    width: 95%;
+    
+}
+
+.contact .page__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14vh;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+
+}
+
+.contact .page__content div {
+    width: 100%;
+    padding: 0.5vh;
+    
+    
+}
+
+@media (orientation: portrait), (max-width: 767px) and (orientation: landscape){
+    .contact .page__content{
+        flex-direction: column;
+     
+    }
+    
+
+    .contact.page{
+        min-height: auto;
+    }
+    .mail{
+        display: none;
+    }
+    .icons__bar{
+        
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+}

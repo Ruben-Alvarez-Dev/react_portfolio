@@ -1,0 +1,39 @@
+/* .aboutCard{
+    
+    border-radius: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.aboutCard > h3 {
+    padding: 2vh;
+}
+
+.background{
+    width: auto;
+
+    
+}
+.about.training{
+    width: auto;
+    min-width: auto;
+    height: 100%;
+}
+.aboutCard.languages{
+    width: auto;
+}
+
+@media (orientation: portrait), (max-width: 767px) and (orientation: landscape)
+    .background{
+        width: auto;
+        max-width: 100%;
+    }
+    .about.training{
+        max-width: 100%;
+    }
+    
+}
+ */
