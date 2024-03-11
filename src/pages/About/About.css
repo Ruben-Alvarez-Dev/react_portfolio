@@ -1,74 +1,21 @@
-.about.page{
+.about .card{
+    border-radius: 20px;
+    width: 95%;
+    height: 95%;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    text-align: center;
-    min-height: 80vh;
-}
-
-.about .page__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items:end;
-    padding-top: 2vh;
-
-
-}
-.about__panels{
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2vh 2vw 2vh 2vw;
-    gap: 2vw;
-    
+    margin: 0 auto;
+    padding: 0;
 }
-.left.panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-.right.panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}   
 
-.aboutCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    padding: 2vh 2vw 2vh 2vw;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    text-align: center;
 
-}
+
 
 @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
-    .about.page{
-        min-height: auto;
-    }
-
-    .about__panels{
+    .about .card{
         flex-direction: column;
-        gap: 5vh;
-    }
-    .left.panel{
-        width: 100%;
-    }
-    .right.panel{
-        width: 100%;
     }
 
 }
-
-

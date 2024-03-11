@@ -1,4 +1,4 @@
-/* import './AboutCardItem.css'; */
+import './AboutCardItem.css';
 
 export const AboutCardItem = ({ content }) => {
   return (

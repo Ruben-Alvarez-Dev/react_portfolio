@@ -15,16 +15,16 @@ export const Main = () => {
       <div id="hero-anchor"></div>
           <PageComponent name="hero" template={<Hero /> }/>      
       
-      <div id="hero-anchor"></div>
+      <div id="about-anchor"></div>
           <PageComponent name="about" template={<About /> }/>
       
-      <div id="hero-anchor"></div>
+      <div id="skills-anchor"></div>
           <PageComponent name="skills" template={<Skills /> }/>
 
-      <div id="hero-anchor"></div>
+      <div id="projects-anchor"></div>
           <PageComponent name="projects" template={<Projects /> }/>
 
-      <div id="hero-anchor"></div>
+      <div id="contact-anchor"></div>
           <PageComponent name="contact" template={<Contact /> }/>
 
     </main>

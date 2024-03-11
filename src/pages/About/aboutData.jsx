@@ -1,50 +1,5 @@
 
-import './aboutData.css';
-
-export const aboutData = (
-  <>
-    <Card 
-        as='section'
-        id="about"
-        type='page'
-        title='About'
-        styles='about neo-5-out column'
-        content={
-          <>
-            <div className="about__panels">
-            <Card 
-                as='article'
-                type='panel'
-                styles='left neo-5-out column'
-                content={
-                    <>
-                      <AboutCard 
-                        title="Background"
-                        content={background}
-                      />
-                    </>
-                  }
-              />
-              <Card 
-                as='article'
-                type='panel'
-                styles='right neo-5-out column'
-                content={
-                    <>
-                      <AboutCard 
-                        title="Training"
-                        content={training}
-                      />
-                    </>
-                }
-              />
-              
-            </div>
-          </>
-        }
-      />
-  </>
-)
+import { AboutCard } from "./AboutCard";
 
 export const training = [
         {
@@ -73,7 +28,6 @@ export const training = [
           content: "NV Qualification, Level 2",
         }
       ];
-      
 export const background = [
         {
           title: "",
@@ -81,7 +35,6 @@ export const background = [
     
         },
       ];
-      
 export const languages = [
         {
           title: "Spanish",
@@ -100,7 +53,6 @@ export const languages = [
           content: "A1 equivalent",
         },
       ]
-
 {/* <div className="about__container">
       <AboutCard
         className="background"
@@ -118,3 +70,9 @@ export const languages = [
         content={training}
       />
       </div> */}
+export const aboutTemplate = (
+  <>
+    <AboutCard title="background" content={background} />
+    <AboutCard title="training" content={training} />
+  </>
+)

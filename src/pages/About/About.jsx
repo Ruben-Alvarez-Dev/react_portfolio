@@ -1,15 +1,15 @@
-/* import './About.css'; */
+import './About.css';
 /* import './aboutData.jsx'; */
-/* import { Card } from '../../components/CardComponent/Card'; */
+import { CardComponent } from '../../components/CardComponent/CardComponent';
 /* import { AboutCard } from "./AboutCard"
-import { background, training } from './aboutData';
  */
+import { aboutTemplate } from './AboutData';
+
 export const About = () => {
   
-
   return (
     <>
-      <div>About</div>
+      <CardComponent name="about" title="About me" template={aboutTemplate}/>
     </>
   );
 }
