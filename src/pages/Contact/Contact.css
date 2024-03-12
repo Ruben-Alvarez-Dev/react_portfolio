@@ -33,23 +33,28 @@
 
 
 @media (orientation: portrait), (max-width: 767px) and (orientation: landscape){
-    .contact .page__content{
+    
+    .contact .card{
         flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh;
+        margin: 0;
      
     }
     
-
-    .contact.page{
-        min-height: auto;
+    .contactPanel{
+        padding: 5vh 5vw 5vh 5vw;
+        margin: 0vh 0vw 0vh 0vw;
+        border-radius: 20px;
     }
-    .mail{
-        display: none;
-    }
-    .icons__bar{
-        
-        flex-direction: column;
+    .contactPanel .icons__bar{
+        flex-direction: row;
+        margin: 0 auto;
         padding: 0;
-        margin: 0;
+        gap:5vh;
     }
 
 }
