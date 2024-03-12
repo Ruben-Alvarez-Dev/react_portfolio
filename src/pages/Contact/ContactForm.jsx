@@ -10,23 +10,23 @@ export const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Configuración de EmailJS
+    
     const serviceID = 'service_oi3c475';
     const templateID = 'template_53zkgow';
     const userID = 'ztptnLSl-C1nVRxGm';
 
-    // Parámetros del correo electrónico
+
     const templateParams = {
       from_name: name,
       from_email: email,
       message: message,
     };
 
-    // Enviar el correo electrónico utilizando EmailJS
+
     emailjs.send(serviceID, templateID, templateParams, userID)
       .then((response) => {
         alert('Correo electrónico enviado:', response.status, response.text);
-        // Reiniciar los campos del formulario después de enviar
+
         setName('');
         setEmail('');
         setMessage('');
@@ -37,8 +37,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <div>
-      <h2></h2>
+    <div className="neo-5-out contactForm">
+      <h2>Say me hello!</h2>
       <br/>
       <form onSubmit={handleSubmit}>
         <div>
@@ -76,7 +76,7 @@ export const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <button className="neo-5-out" type="submit">Enviar</button>
+        <button className="neo-5-out" type="submit">Send</button>
       </form>
     </div>
   );

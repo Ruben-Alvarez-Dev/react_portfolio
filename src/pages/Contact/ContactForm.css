@@ -1,4 +1,16 @@
-/* ContactForm.css */
+.contactForm{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 0.5vh;
+    padding: 3vh;
+    
+
+}
 
 form {
     display: flex;
@@ -6,7 +18,8 @@ form {
     max-width: 400px;
     margin: 0 auto;
     gap: 0.5vh;
-
+    padding: 3vh;
+    
 }
 
 label {

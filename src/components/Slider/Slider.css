@@ -1,4 +1,4 @@
-.slider{
+/* .slider{
     object-fit: cover;
     display: flex;
     flex-wrap: wrap;    
@@ -13,4 +13,30 @@
     border-radius: 20px;
     transition: all 0.3s ease;
     padding: 2vh;
+} */
+
+.slider{
+    border-radius: 20px;
+    
+}
+.slider img{
+    border-radius: 20px;
+}
+
+@media (orientation: portrait){
+    .slider{
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        flex-wrap: wrap;    
+        border-radius: 20px;
+    }
+    .slider img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        padding: 2vh;
+    }
 }
