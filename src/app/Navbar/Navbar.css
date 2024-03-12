@@ -16,13 +16,13 @@
 }
 
 .navbar h2{
-    margin: 2.5vh 2vh 2.5vh 10vh;
+    margin: 2.5vh 2vh 2.5vh 7vh;
 }
 .navbar ul{
     list-style: none;
     display: flex;
-    gap: 8vw;
-    margin: 2vh 10vh 2vh 2vh;
+    gap: 7vw;
+    margin: 2vh 1vh 2vh 1vh;
 }
 .navbar img{
     width: 2em;
@@ -39,11 +39,29 @@
     opacity: 0.5;
 }
 
+.downloadBtn{
+    
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 1vh 5vh 1vh 1vh;
+}
+
 
 @media (orientation: portrait){
     
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .downloadBtn{
+        margin: 0;
+    }
+    .navbar h2{
+        margin: 2.5vh 0vh 2.5vh 0vh;;
+    }
     .navbar img{
         display: flex;
+        margin: 0;
     }
     .navbar ul{
         display: none;

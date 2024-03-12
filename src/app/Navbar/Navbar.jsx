@@ -1,16 +1,14 @@
 import './Navbar.css';
 import iconHamburger from '../../assets/navbar/hamburger.svg';
-/* 
-import { NavbarOverlay } from '../../components/Navbar/NavbarOverlay'
-import { NavbarButton } from '../../components/Navbar/NavbarButton' */
-
+import { DownloadBtn } from './DownloadBtn';
 export const Navbar = () => {
   
   const handleToggle = (e) => {
-    const overlay = document.querySelector('.navbar__overlay');
-    overlay.style.display = 'flex';
+    const aside = document.querySelector('.aside');
+    aside.style.display = 'flex';
     setTimeout(() => {
-      overlay.style.opacity = 1;
+      aside.style.zIndex = 100;
+      aside.style.opacity = 1;
     }, 1);
   }
 
@@ -25,27 +23,13 @@ export const Navbar = () => {
           <li><h3><a href="#projects-anchor">Projects</a></h3></li>
           <li><h3><a href="#contact-anchor">Contact</a></h3></li>
         </ul>
-        <img src={iconHamburger} />
+        <DownloadBtn
+            href="../../assets/cv_ruben_2024.pdf"
+            label="Download CV"
+         />
+        <img onClick={handleToggle} src={iconHamburger} />
 
-        {/* <h2></h2>
-          <div className="navbar__textMenu">
-            <ul className="navbar__list">
-                
-                <li>
-                  <NavbarButton
-                      href="../../assets/cv_ruben_2024.pdf"
-                      label="Download"
-                  />
-                </li>
-                
-            </ul>
-          </div>
-        
-        <img
-            onClick={handleToggle}     className="navbar__iconHamburger"
-            src={iconHamburger}
-        />
-        <NavbarOverlay /> */}
+      
       </nav>
 
 
