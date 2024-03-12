@@ -1,13 +1,13 @@
-/* import './Projects.css' */
-/* import { Card } from "../../components/Card/Card"
-import { ProjectCard } from "./ProjectCard" */
+import './Projects.css'
+import { CardComponent } from "../../components/CardComponent/CardComponent"
+import { projectsTemplate } from "./projectsData"
 
 export const Projects = () => {
     return (
       <>
-        <div>
-          Projects
-        </div>
+        
+        <CardComponent name="projects" title="Projects" template={projectsTemplate}/>
+        
       </>
       
     )
