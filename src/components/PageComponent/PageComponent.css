@@ -25,6 +25,10 @@
 @media (orientation: portrait){
     .page{
         min-height: auto;
+        margin: 5vh 0 5vh 0;
+    }
+    .card{
+        padding: 5vh 0.5vw 5vh 0.5vw;
         
     }
 

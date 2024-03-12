@@ -24,12 +24,8 @@
 }
 @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
     
-    .card__container{
-        
-    }
-    .card__content{
-        flex-direction: column;
-
+    .main{
+        scroll-snap-type: none;
     }
 
 }
