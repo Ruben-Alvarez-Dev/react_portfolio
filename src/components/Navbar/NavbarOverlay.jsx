@@ -25,7 +25,7 @@ export const NavbarOverlay = () => {
               <li><a onClick={handleBtn} href="#skills-anchor">Skills</a></li>
               <li><a onClick={handleBtn} href="#projects-anchor">Projects</a></li>
               <li><a onClick={handleBtn} href="#contact-anchor">Contact</a></li>
-              <li><a onClick={handleBtn} href="../../assets/cv_ruben_2024.pdf" download>Download</a></li>
+              <li><a onClick={handleBtn} href="../../assets/dev_cv_ruben.pdf" download>Download</a></li>
 
             </ul>
           </div>

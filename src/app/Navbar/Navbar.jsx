@@ -13,25 +13,18 @@ export const Navbar = () => {
   }
 
   return (
-
-      
-      <nav className="navbar">
-        <h2><a href="#hero-anchor">Dev Portfolio</a></h2>
-        <ul>
-          <li><h3><a href="#about-anchor">About</a></h3></li>
-          <li><h3><a href="#skills-anchor">Skills</a></h3></li>
-          <li><h3><a href="#projects-anchor">Projects</a></h3></li>
-          <li><h3><a href="#contact-anchor">Contact</a></h3></li>
-        </ul>
-        <DownloadBtn
-            href="../../assets/cv_ruben_2024.pdf"
-            label="Download CV"
-         />
-        <img onClick={handleToggle} src={iconHamburger} />
-
-      
-      </nav>
-
-
+    <nav className="navbar">
+      <h2><a href="#hero-anchor">Dev Portfolio</a></h2>
+      <ul>
+        <li><h3><a href="#about-anchor">About</a></h3></li>
+        <li><h3><a href="#skills-anchor">Skills</a></h3></li>
+        <li><h3><a href="#projects-anchor">Projects</a></h3></li>
+        <li><h3><a href="#contact-anchor">Contact</a></h3></li>
+      </ul>
+      <DownloadBtn        
+        label="Download CV"
+      />
+      <img onClick={handleToggle} src={iconHamburger} />
+    </nav>
   )
 }

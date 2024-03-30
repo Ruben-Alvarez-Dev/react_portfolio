@@ -5,8 +5,12 @@ import { ContactForm } from './ContactForm';
 
 export const contactTemplate = (
     <>
+
+      
+        <ContactForm />
+      
+      
     
-      <ContactForm />
     
       <div className="contactPanel neo-5-out">
         <IconsBar />

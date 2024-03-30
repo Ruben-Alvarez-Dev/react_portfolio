@@ -15,6 +15,7 @@
 }
 .skillCard__title{
     font-size: 2rem;
+    width: 15%;
     
 }
 
@@ -26,11 +27,22 @@
     gap: 5px;
     padding: 5px;
     margin: 5px;
+    width: 75%;
+    
     
 }
 
 @media (orientation: portrait), (max-width: 767px) and (orientation: landscape) {
     
+    .skillCard__title{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
     .skillCard {flex-direction: column}
     
     

@@ -8,6 +8,7 @@ export const Contact = () => {
   
     return (
         <>
+          
           <CardComponent
               name="contact" 
               title="Contact me" 

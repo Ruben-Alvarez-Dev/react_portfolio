@@ -3,7 +3,7 @@ import { AboutCard } from "./AboutCard";
 
 export const training = [
         {
-          title: "FP Superior, Ilerna, Lleida", 
+          title: "Ciclo Formativo de Grado Superior, Ilerna, Lleida", 
           content: "Desarrollo de aplicaciones web",
         },
         {
@@ -15,7 +15,7 @@ export const training = [
           content: "Máster de Prosesorado de Formación Profesional",
         },
         {
-          title: "FP Superior, Vesta High School, Murcia",
+          title: "Ciclo Formativo de Grado Superior, Vesta Formación, Murcia",
           content: "Dirección de Servicios en Restauración",
         },
     
@@ -29,12 +29,11 @@ export const training = [
         }
       ];
 export const background = [
-        {
-          title: "",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    
-        },
-      ];
+  {
+    title: "",
+    content: "With years of experience in customer-facing hospitality roles and an advanced degree in hospitality management, I've led diverse teams of up to 60 people and developed strong soft skills in communication, leadership, and project management. In 2019, I turned my passion for programming into a professional pursuit, earning a certification in Web Application Development and completing the Neoland Bootcamp. My unique background in hospitality and web development has given me a versatile skill set, and I'm excited to bring these qualities to new challenges in the tech industry."
+  },
+];
 export const languages = [
         {
           title: "Spanish",

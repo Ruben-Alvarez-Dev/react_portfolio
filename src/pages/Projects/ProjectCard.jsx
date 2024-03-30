@@ -1,5 +1,4 @@
 import './ProjectCard.css';
-import { Slider } from '../../components/Slider/Slider';
 import ico_link from './link.svg';
 import ico_github from './github.svg';
 
@@ -13,7 +12,7 @@ export const ProjectCard = ({name, content}) => {
       <div className={`projectCard ${name} neo-5-out`}>
         
         <div className="image">
-          <Slider images={images}/>
+          <img src={content.images}></img>
         </div>
 
         <div className="info">

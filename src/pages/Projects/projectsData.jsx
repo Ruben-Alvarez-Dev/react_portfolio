@@ -1,66 +1,55 @@
 import './ProjectCard.css';
 import { ProjectCard } from './ProjectCard'
-import image_1 from '../../assets/projects/pic1.jpg';
-import image_2 from '../../assets/projects/pic2.jpg';
-import image_3 from '../../assets/projects/pic3.jpg';
-import image_4 from '../../assets/projects/pic4.jpg';
-import image_5 from '../../assets/projects/pic5.jpg';
-import image_6 from '../../assets/projects/pic6.jpg';
-import image_7 from '../../assets/projects/pic7.jpg';
-import image_8 from '../../assets/projects/pic8.jpg';
-import image_9 from '../../assets/projects/pic9.jpg';
+import image_1 from '../../assets/projects/trello-clone.gif';
+import image_2 from '../../assets/projects/image_2.jpg';
+import image_3 from '../../assets/projects/image_3.jpg';
 
 const project_1 = {
-  title: "Título 2",
-  description: "Loren ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+  title: "Trello Clone App",
+  description: "To do list app with drag and drop functionality, like Trello app. It uses LocalStorage to save the data, was made with React JS and Beautiful DnD, and also built with hooks as useState, useEffect and useContext.",
   tools: [
+    "Html",
+    "Css",
+    "Javascript",
+    "React JS",
+    "LocalStorage",
+    "Beautiful DnD",
     "Git",
-    "Postman",
-    "Docker",
-    "AWS",
-    "Firebase",
-    "Postman",
-    "Docker",
-    "AWS"
   ],
-  images: [image_1, image_2, image_3],
-  website: 'https://www.google.com',
-  github: 'https://www.github.com'
+  images: image_1,
+  website: 'https://trello.rubenalvarez.dev',
+  github: 'https://github.com/Ruben-Alvarez-Dev/project_trello-clon'
 };
 const project_2 = { 
-  title: "Título 2",
-  description: "Loren ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+  title: "Trailer Movie App",
+  description: "Pending to upload...",
   tools: [
+    "Html",
+    "Css",
+    "Javascript",
+    "Typescript",
+    "React JS",
+    "React Router",
+    "Styled Components",
+    "Fetch API",
     "Git",
-    "Postman",
-    "Docker",
-    "AWS",
-    "Firebase",
-    "Git",
-    "Postman",
-    "Docker",
-    "AWS"
     ],
-  images: [image_4, image_5, image_6],
+  images: image_2,
   website: 'https://www.google.com',
   github: 'https://www.github.com'
 };
 const project_3 = { 
-  title: "Título 3",
-  description: "Loren ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+  title: "Crud PHP & SQL App",
+  description: "In progress...",
   tools: [
+    "Html",
+    "Css",
+    "Javascript",
+    "PHP",
+    "MySQL",
     "Git",
-    "Postman",
-    "Docker",
-    "AWS",
-    "Firebase",
-    "Firebase",
-    "Firebase",
-    "Firebase",
-    "Firebase",
-    "Firebase"
     ],
-  images: [image_7, image_8, image_9],
+  images: image_3,
   website: 'https://www.google.com',
   github: 'https://www.github.com'
 }
