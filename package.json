@@ -1,29 +1,30 @@
 {
-  "name": "react_portfolio",
+  "name": "react_portfolio2",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@green-api/whatsapp-api-client": "^0.3.38",
-    "emailjs-com": "^3.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "whatsapp-web.js": "^1.23.0"
+    "@react-router/node": "^7.5.3",
+    "@react-router/serve": "^7.5.3",
+    "isbot": "^5.1.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.3"
   },
   "devDependencies": {
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "@react-router/dev": "^7.5.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
