@@ -25,8 +25,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
-  transition: background-color var(--transition-slow), color var(--transition-slow);
+  background: var(--body-bg-gradient);
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  transition: background var(--transition-slow), color var(--transition-slow);
 }
 
 /* Prevent body scroll when mobile menu is open */
@@ -38,14 +40,36 @@ body.menu-open {
   min-height: 100vh;
 }
 
+/* Main element with subtle overlay gradient */
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+main::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--body-bg-gradient);
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+  transition: background var(--transition-slow), opacity var(--transition-slow);
+}
+
 /* ===================================
    UTILITY CLASSES
    =================================== */
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--container-padding);
 }
 
 .text-center {
@@ -64,6 +88,25 @@ body.menu-open {
 .mt-3 { margin-top: var(--spacing-md); }
 .mt-4 { margin-top: var(--spacing-lg); }
 .mt-5 { margin-top: var(--spacing-2xl); }
+
+/* Padding utilities */
+.p-1 { padding: var(--spacing-xs); }
+.p-2 { padding: var(--spacing-sm); }
+.p-3 { padding: var(--spacing-md); }
+.p-4 { padding: var(--spacing-lg); }
+.p-5 { padding: var(--spacing-2xl); }
+
+.px-1 { padding-left: var(--spacing-xs); padding-right: var(--spacing-xs); }
+.px-2 { padding-left: var(--spacing-sm); padding-right: var(--spacing-sm); }
+.px-3 { padding-left: var(--spacing-md); padding-right: var(--spacing-md); }
+.px-4 { padding-left: var(--spacing-lg); padding-right: var(--spacing-lg); }
+.px-5 { padding-left: var(--spacing-2xl); padding-right: var(--spacing-2xl); }
+
+.py-1 { padding-top: var(--spacing-xs); padding-bottom: var(--spacing-xs); }
+.py-2 { padding-top: var(--spacing-sm); padding-bottom: var(--spacing-sm); }
+.py-3 { padding-top: var(--spacing-md); padding-bottom: var(--spacing-md); }
+.py-4 { padding-top: var(--spacing-lg); padding-bottom: var(--spacing-lg); }
+.py-5 { padding-top: var(--spacing-2xl); padding-bottom: var(--spacing-2xl); }
 
 /* ===================================
    GLOBAL ELEMENT STYLES

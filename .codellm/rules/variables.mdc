@@ -1,0 +1,10 @@
+---
+description: variables
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- Siempre tenemos que usar las variables de css desde el archivo de variables, no directamente en los componentes
+- Se respetarán el tema de color, las variables y las paletas de colores para todos los elementos
