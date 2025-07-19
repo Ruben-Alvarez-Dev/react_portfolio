@@ -1,0 +1,227 @@
+.header {
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-md);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: relative;
+}
+
+.header__logo h3 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Desktop Navigation */
+.header__nav {
+  display: block;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.header__nav-list li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.header__nav-list li a:hover {
+  color: var(--primary-color);
+}
+
+.header__nav-list li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.header__nav-list li a:hover::after {
+  width: 100%;
+}
+
+/* Header Actions (Theme Toggle + Mobile Menu) */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Mobile Menu Toggle Button */
+.header__menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.header__menu-line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger Animation */
+.header__menu-toggle--active .header__menu-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header__menu-toggle--active .header__menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu-toggle--active .header__menu-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation */
+.header__mobile-nav {
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  width: 280px;
+  height: calc(100vh - 70px);
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-lg);
+  transition: right 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.header__mobile-nav--open {
+  right: 0;
+}
+
+.header__mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__mobile-nav-list li {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.header__mobile-nav-list li a {
+  display: block;
+  padding: 20px 30px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.header__mobile-nav-list li a:hover {
+  background-color: var(--bg-secondary);
+  color: var(--primary-color);
+  padding-left: 40px;
+}
+
+/* Overlay */
+.header__overlay {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0 15px;
+    height: 60px;
+  }
+  
+  .header__logo h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Hide desktop navigation */
+  .header__nav {
+    display: none;
+  }
+  
+  /* Show mobile menu toggle */
+  .header__menu-toggle {
+    display: flex;
+  }
+  
+  /* Adjust mobile nav for smaller header */
+  .header__mobile-nav {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  
+  .header__overlay {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    padding: 0 10px;
+  }
+  
+  .header__mobile-nav {
+    width: 100%;
+    right: -100%;
+  }
+  
+  .header__mobile-nav--open {
+    right: 0;
+  }
+}

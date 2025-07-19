@@ -1,0 +1,135 @@
+.about {
+  padding: 80px 20px;
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.about__text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.about__text p {
+  margin-bottom: 20px;
+}
+
+.about__skills {
+  margin-top: 40px;
+}
+
+.about__skills-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.about__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  background: var(--bg-primary);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  height: fit-content;
+  transition: all 0.3s ease;
+}
+
+.about__stat {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: border-color 0.3s ease;
+}
+
+.about__stat:last-child {
+  border-bottom: none;
+}
+
+.about__stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.about__stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+  
+  .about__title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .about__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about__stats {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+  }
+  
+  .about__stat {
+    padding: 15px 0;
+    border-bottom: none;
+    border-right: 1px solid var(--border-light);
+  }
+  
+  .about__stat:last-child {
+    border-right: none;
+  }
+  
+  .about__stat-number {
+    font-size: 2rem;
+  }
+  
+  .about__stat-label {
+    font-size: 0.8rem;
+  }
+}
