@@ -122,6 +122,24 @@
   /* === EFFECTS === */
   --backdrop-blur: blur(10px);
   --backdrop-blur-strong: blur(20px);
+
+  /* Glass Effect Variables */
+  --glass-bg-light: rgba(255, 255, 255, 0.1);
+  --glass-bg-dark: rgba(0, 0, 0, 0.15);
+  --glass-border-light: rgba(255, 255, 255, 0.1);
+  --glass-border-dark: rgba(255, 255, 255, 0.05);
+  --glass-shadow-light: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --glass-shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --glass-inset-light: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --glass-inset-dark: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  /* Glass Effect - Scrolled State (more opaque) */
+  --glass-bg-light-scrolled: rgba(255, 255, 255, 0.15);
+  --glass-bg-dark-scrolled: rgba(0, 0, 0, 0.25);
+  --glass-shadow-light-scrolled: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --glass-shadow-dark-scrolled: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --glass-inset-light-scrolled: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  --glass-inset-dark-scrolled: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   
   /* === Z-INDEX === */
   --z-dropdown: 1000;

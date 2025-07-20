@@ -46,15 +46,6 @@ const Header = () => {
           <h3>Rubén Álvarez</h3>
         </div>
         
-        {/* Desktop Navigation */}
-        <nav className="header__nav">
-          <ul className="header__nav-list">
-            <li><a href="#about" onClick={closeMenu}>Sobre mí</a></li>
-            <li><a href="#projects" onClick={closeMenu}>Proyectos</a></li>
-            <li><a href="#contact" onClick={closeMenu}>Contacto</a></li>
-          </ul>
-        </nav>
-
         {/* Theme Toggle and Mobile Menu */}
         <div className="header__actions">
           <ThemeToggle />
