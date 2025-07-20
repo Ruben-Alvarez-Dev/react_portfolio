@@ -7,36 +7,52 @@
    =================================== */
 :root {
   /* === COLORS === */
-  /* Brand Colors */
-  --primary-color: #007bff;
+  /* Brand Colors - Usando la paleta de azules y verdes */
+  --primary-color: #58a6ff;
   --secondary-color: #6c757d;
-  --success-color: #28a745;
+  --success-color: #3fb950;
   --warning-color: #ffc107;
   --danger-color: #dc3545;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --accent-color: #ffd700; /* Gold accent for highlights */
+  --accent-color: #0f766e; /* Verde azulado del tema oscuro */
   
-  /* Background Colors */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-tertiary: #e9ecef;
+  /* Background Colors - Azules oscuros transparentes para contraste */
+  --bg-primary: rgba(13, 17, 23, 0.15);       /* Negro azulado transparente */
+  --bg-secondary: rgba(26, 31, 46, 0.1);      /* Azul muy oscuro transparente */
+  --bg-tertiary: rgba(45, 27, 105, 0.08);     /* Azul oscuro transparente */
   
-  /* Text Colors */
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-muted: #999999;
-  --text-inverse: #ffffff;
+  /* Text Colors - Negros y azules oscuros coherentes con la paleta */
+  --text-primary: #0d1117;      /* Negro azulado del tema oscuro */
+  --text-secondary: #1a1f2e;    /* Azul muy oscuro */
+  --text-muted: #2d1b69;        /* Azul oscuro del gradiente */
+  --text-inverse: #ffffff;      /* Blanco para fondos oscuros */
   
-  /* Border Colors */
-  --border-color: #dee2e6;
-  --border-light: #e9ecef;
+  /* Border Colors - Azules oscuros transparentes */
+  --border-color: rgba(13, 17, 23, 0.2);      /* Negro azulado transparente */
+  --border-light: rgba(26, 31, 46, 0.15);     /* Azul muy oscuro transparente */
   
-  /* === GRADIENTS === */
-  --hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --contact-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* === GRADIENTES === */
+  --hero-gradient: linear-gradient(135deg,
+    rgba(15, 23, 42, 0.1) 0%,
+    rgba(30, 41, 59, 0.08) 50%,
+    rgba(15, 118, 110, 0.12) 100%);
+  --contact-gradient: linear-gradient(135deg,
+    rgba(88, 166, 255, 0.08) 0%,
+    rgba(63, 185, 80, 0.06) 50%,
+    rgba(15, 118, 110, 0.1) 100%);
   --main-bg-gradient: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
-  --body-bg-gradient: linear-gradient(45deg, #fafafa 0%, #f5f5f5 25%, #fafafa 50%, #f0f0f0 75%, #fafafa 100%);
+
+  /* Fondo del body - Gradiente con 90% transparencia sobre blanco */
+  --body-bg-gradient:
+    linear-gradient(135deg,
+      rgba(45, 27, 105, 0.9) 0%,     /* Azul oscuro/morado con 90% opacidad */
+      rgba(88, 166, 255, 0.9) 25%,   /* Azul primario con 90% opacidad */
+      rgba(15, 118, 110, 0.9) 50%,   /* Verde azulado con 90% opacidad */
+      rgba(63, 185, 80, 0.9) 75%,    /* Verde success con 90% opacidad */
+      rgba(88, 166, 255, 0.9) 100%   /* Azul primario con 90% opacidad */
+    ),
+    #ffffff;
   
   /* === SECTION MASKS === */
   --mask-size: 120px; /* Size of the transparency mask in pixels */
@@ -162,49 +178,71 @@
 /* ===================================
    LIGHT THEME OVERRIDES
    =================================== */
+/* ===================================
+   LIGHT THEME OVERRIDES - AZULES Y VERDES COHERENTES
+   =================================== */
 :root.light-theme {
-  /* Colors remain the same as default */
-  --primary-color: #007bff;
+  /* Colors - Usando la paleta de azules y verdes */
+  --primary-color: #58a6ff;
   --secondary-color: #6c757d;
-  --success-color: #28a745;
+  --success-color: #3fb950;
   --warning-color: #ffc107;
   --danger-color: #dc3545;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --accent-color: #ffd700;
-  
-  /* Background Colors */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-tertiary: #e9ecef;
-  
-  /* Text Colors */
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-muted: #999999;
-  --text-inverse: #ffffff;
-  
-  /* Border Colors */
-  --border-color: #dee2e6;
-  --border-light: #e9ecef;
-  
-  /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1);
-  
+  --accent-color: #0f766e; /* Verde azulado del tema oscuro */
+
+  /* Background Colors - Azules oscuros transparentes para contraste */
+  --bg-primary: rgba(13, 17, 23, 0.15);       /* Negro azulado transparente */
+  --bg-secondary: rgba(26, 31, 46, 0.1);      /* Azul muy oscuro transparente */
+  --bg-tertiary: rgba(45, 27, 105, 0.08);     /* Azul oscuro transparente */
+
+  /* Text Colors - Negros y azules oscuros coherentes con la paleta */
+  --text-primary: #0d1117;      /* Negro azulado del tema oscuro */
+  --text-secondary: #1a1f2e;    /* Azul muy oscuro */
+  --text-muted: #2d1b69;        /* Azul oscuro del gradiente */
+  --text-inverse: #ffffff;      /* Blanco para fondos oscuros */
+
+  /* Border Colors - Blancos transparentes */
+  /* Border Colors - Azules oscuros transparentes */
+  --border-color: rgba(13, 17, 23, 0.2);      /* Negro azulado transparente */
+  --border-light: rgba(26, 31, 46, 0.15);     /* Azul muy oscuro transparente */
+
+  /* Shadows - Con tinte azulado */
+  /* Shadows - Con tinte azul oscuro */
+  --shadow-sm: 0 2px 4px rgba(13, 17, 23, 0.3);
+  --shadow-md: 0 4px 16px rgba(13, 17, 23, 0.35);
+  --shadow-lg: 0 8px 25px rgba(13, 17, 23, 0.4);
+  --shadow-xl: 0 20px 40px rgba(13, 17, 23, 0.3);
+
   /* Toggle specific */
-  --toggle-track-bg: #e9ecef;
+  --toggle-track-bg: rgba(26, 31, 46, 0.2);
   --toggle-thumb-bg: #ffffff;
-  --toggle-border: #dee2e6;
-  --hover-bg: rgba(0, 0, 0, 0.05);
-  
-  /* Gradients */
-  --hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --contact-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --toggle-border: rgba(13, 17, 23, 0.3);
+  --hover-bg: rgba(26, 31, 46, 0.1);
+
+  /* Gradientes para secciones - Azules oscuros transparentes */
+  --hero-gradient: linear-gradient(135deg,
+    rgba(13, 17, 23, 0.1) 0%,
+    rgba(26, 31, 46, 0.05) 50%,
+    rgba(45, 27, 105, 0.15) 100%);
+  --contact-gradient: linear-gradient(135deg,
+    rgba(13, 17, 23, 0.08) 0%,
+    rgba(26, 31, 46, 0.12) 50%,
+    rgba(15, 118, 110, 0.06) 100%);
   --main-bg-gradient: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
-  --body-bg-gradient: linear-gradient(45deg, #fafafa 0%, #f5f5f5 25%, #fafafa 50%, #f0f0f0 75%, #fafafa 100%);
+
+  /* Fondo del body - Gradiente drástico azul-verde sin blanco */
+  /* Fondo del body - Gradiente con 90% transparencia sobre blanco */
+  --body-bg-gradient:
+    linear-gradient(135deg,
+      rgba(45, 27, 105, 0.9) 0%,     /* Azul oscuro/morado con 90% opacidad */
+      rgba(88, 166, 255, 0.9) 25%,   /* Azul primario con 90% opacidad */
+      rgba(15, 118, 110, 0.9) 50%,   /* Verde azulado con 90% opacidad */
+      rgba(63, 185, 80, 0.9) 75%,    /* Verde success con 90% opacidad */
+      rgba(88, 166, 255, 0.9) 100%   /* Azul primario con 90% opacidad */
+    ),
+    #ffffff;
 }
 
 /* ===================================

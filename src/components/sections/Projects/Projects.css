@@ -1,6 +1,7 @@
 .projects {
   padding: var(--section-padding) var(--container-padding);
   background: var(--bg-primary);
+  backdrop-filter: blur(10px);
   color: var(--text-primary);
   -webkit-mask: var(--mask-both);
   mask: var(--mask-both);
@@ -38,6 +39,7 @@
 
 .project-card {
   background: var(--bg-secondary);
+  backdrop-filter: var(--backdrop-filter-blur);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -55,6 +57,7 @@
   height: 200px;
   overflow: hidden;
   background: var(--bg-tertiary);
+  backdrop-filter: var(--backdrop-filter-blur);
 }
 
 .project-card__image img {

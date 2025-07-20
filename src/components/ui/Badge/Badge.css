@@ -12,6 +12,7 @@
 /* Variants */
 .badge--default {
   background-color: var(--bg-secondary);
+  backdrop-filter: blur(10px);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
 }
@@ -38,6 +39,7 @@
 
 .badge--tech {
   background-color: var(--bg-tertiary);
+  backdrop-filter: var(--backdrop-filter-blur);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
 }
