@@ -1,6 +1,11 @@
+import Button from '../../ui/Button'
 import './Header.css'
 
 function Header() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <header id="home" className="header">
       <div className="header-container">
@@ -14,18 +19,18 @@ function Header() {
             Especializado en React, Node.js y desarrollo de aplicaciones escalables.
           </p>
           <div className="header-buttons">
-            <button 
-              className="btn btn-primary"
-              onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+            <Button 
+              variant="primary"
+              onClick={() => scrollToSection('projects')}
             >
               Ver Proyectos
-            </button>
-            <button 
-              className="btn btn-secondary"
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+            </Button>
+            <Button 
+              variant="secondary"
+              onClick={() => scrollToSection('contact')}
             >
               Contactar
-            </button>
+            </Button>
           </div>
         </div>
         <div className="header-image">

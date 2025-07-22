@@ -1,0 +1,30 @@
+.about-section {
+  background: #f8f9ff;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
